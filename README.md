@@ -5,13 +5,13 @@
 AI Secretary は、単なるチャットボットではありません。
 あなたのPC上の活動履歴（ログ）と、未来の予定（カレンダー）、そしてリアルタイムの集中状態（センサー）を統合し、「今、あなたが何をすべきか」を先回りしてサポートする Windows アプリケーションです。
 
-![Version](https://img.shields.io/badge/version-0.3.0-blue.svg)
+![Version](https://img.shields.io/badge/version-0.5.7-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-0078D6.svg)
 ![Stack](https://img.shields.io/badge/stack-Electron%20%7C%20React%20%7C%20Python%20%7C%20Firebase%20%7C%20Gemini-4285F4.svg)
 
 ---
 
-## 🚀 Key Features (v0.3.0)
+## 🚀 Key Features (v0.5.7)
 
 ### 1. 🧠 Deep Memory Briefing (文脈統合ブリーフィング)
 「次の会議、何だっけ？」と聞く必要はありません。

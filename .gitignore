@@ -1,0 +1,14 @@
+# Binaries
+*.exe
+*.dll
+*.zip
+
+# Build Directories
+release/
+dist/
+build/
+
+# OS Files
+Thumbs.db
+Desktop.ini
+.DS_Store
