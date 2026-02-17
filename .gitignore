@@ -1,14 +1,14 @@
-# Binaries
-*.exe
-*.dll
-*.zip
-
-# Build Directories
-release/
-dist/
-build/
-
-# OS Files
-Thumbs.db
-Desktop.ini
+node_modules
+dist
+release
+.env
 .DS_Store
+Thumbs.db
+frontend
+backend
+agent
+.vscode
+
+# Secrets
+*.json
+client_secret*
