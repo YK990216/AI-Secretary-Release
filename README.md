@@ -20,7 +20,6 @@ AI Secretary は、単なるチャットボットではありません。
 *   **Auto-Generation**: 毎晩22:00にその日の記憶を自動生成し、翌日のブリーフィングに備えます (v0.6.3+)。
 
 ### 2. ⚡ Smart Tensai Sensing (集中センシング)
-PCがあなたの「集中ゾーン」を理解します。
 *   **Multi-Modal Sensor**: キーボード入力密度(KPM)とマウス移動距離をリアルタイム監視（Python Sidecar）。
 *   **Privacy-First**: 入力内容（キーロガー）は**一切保存せず**、統計値のみを用いて集中スコア(0-100)を算出します。
 
@@ -31,8 +30,16 @@ PCがあなたの「集中ゾーン」を理解します。
 
 ---
 
-## 📦 Installation
+## 📚 Documentation
+本リポジトリには、開発者向けの技術仕様が含まれています。
 
+*   **[リリースノート (v0.6.3)](windows-mvp/release/RELEASE_NOTES_v0.6.3.md)**: バグ修正と改善の詳細
+*   **[開発者向け仕様書 (v0.6.2)](windows-mvp/docs/PRODUCT_SPEC_DEV_v0.6.2.md)**: Mermaid対応の詳細仕様
+*   [セキュリティ仕様書](AI秘書_セキュリティ仕様書.md): データ保護とプライバシーポリシー
+
+---
+
+## 📦 Installation
 1. リリースページから `AI-Secretary-Setup-0.6.3.exe` をダウンロードしてください。
 2. インストーラーを実行すると、自動的にセットアップされます。
 3. 詳細は [インストールマニュアル](manual/installation_manual.md) を参照してください。
@@ -45,28 +52,6 @@ PCがあなたの「集中ゾーン」を理解します。
 *   **Sensing**: Python 3.12 (pynput), PyInstaller (Standalone EXE)
 *   **AI**: Google Gemini 2.0 Flash (via Vertex AI / Studio)
 *   **Cloud**: Firebase Authentication, Firestore (Realtime Sync)
-*   **Calendar**: Google Calendar API, Microsoft Graph API
-
----
-
-## 🔒 Security & Privacy
-
-*   **Zero Data Retention**: AIモデルへのデータ送信時、学習利用を禁止する設定で運用しています。
-*   **Local Processing**: センサーデータの解析はすべてローカルPC上で行われます。
-*   **Secure Storage**: ログデータはユーザーIDごとに分離されたクラウドデータベース(Firestore)に暗号化して保存されます。
-
-詳細は [セキュリティ仕様書](AI秘書_セキュリティ仕様書.md) を参照してください。
-
----
-
-## 📂 Project Structure
-
-*   `windows-mvp/`: アプリケーション本体のソースコード
-    *   `src/`: React フロントエンド
-    *   `electron/`: Electron メインプロセス & ログ収集(PowerShell)
-    *   `sensing/`: Python センサーモジュール
-    *   `scripts/`: インストール用スクリプト
-*   `manual/`: 各種マニュアル・ドキュメント
 
 ---
 
