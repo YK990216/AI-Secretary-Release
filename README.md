@@ -5,13 +5,13 @@
 AI Secretary は、単なるチャットボットではありません。
 あなたのPC上の活動履歴（ログ）と、未来の予定（カレンダー）、そしてリアルタイムの集中状態（センサー）を統合し、「今、あなたが何をすべきか」を先回りしてサポートする Windows アプリケーションです。
 
-![Version](https://img.shields.io/badge/version-0.6.3-blue.svg)
+![Version](https://img.shields.io/badge/version-0.7.0-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-0078D6.svg)
 ![Stack](https://img.shields.io/badge/stack-Electron%20%7C%20React%20%7C%20Python%20%7C%20Firebase%20%7C%20Gemini-4285F4.svg)
 
 ---
 
-## 🚀 Key Features (v0.6.3)
+## 🚀 Key Features (v0.7.0)
 
 ### 1. 🧠 Deep Memory Briefing (文脈統合ブリーフィング)
 *   **Deep Memory**: 過去数日間の作業ログを記憶し、現在のコンテキストを理解。
@@ -24,8 +24,8 @@ AI Secretary は、単なるチャットボットではありません。
 *   **Privacy-First**: 入力内容（キーロガー）は**一切保存せず**、統計値のみを用いて集中スコア(0-100)を算出します。
 
 ### 3. 🛠️ Robust System Integration (システム連携の強化)
-*   **Auto-Start**: Windows起動時に自動的に秘書が立ち上がり、常に見守ります (v0.6.3+)。
-*   **Resilient Connectivity**: カレンダーAPI等の認証切れを自動検知し、バックグラウンドで再接続します (v0.6.3+)。
+*   **Auto-Start**: Windows起動時に自動的に秘書が立ち上がり、常に見守ります。
+*   **Native Authentication**: システムブラウザを使用した堅牢なOAuth認証フローを採用。従来の「1時間ごとの切断」問題を解消し、長時間の安定稼働を実現しました (v0.7.0+)。
 *   **Persistent Settings**: 画面分割位置やショートカット設定は、アプリ終了後も確実に保存されます。
 
 ---
@@ -33,14 +33,14 @@ AI Secretary は、単なるチャットボットではありません。
 ## 📚 Documentation
 本リポジトリには、開発者向けの技術仕様が含まれています。
 
-*   **[リリースノート (v0.6.3)](windows-mvp/release/RELEASE_NOTES_v0.6.3.md)**: バグ修正と改善の詳細
-*   **[開発者向け仕様書 (v0.6.2)](windows-mvp/docs/PRODUCT_SPEC_DEV_v0.6.2.md)**: Mermaid対応の詳細仕様
+*   **[リリースノート (v0.7.0)](release/RELEASE_NOTES_v0.7.0.md)**: 認証基盤刷新の詳細
+*   **[製品仕様書 (v0.7.0)](docs/01_製品仕様/AI秘書_製品仕様書_v0.7.0.md)**: ネイティブOAuth対応
 *   [セキュリティ仕様書](AI秘書_セキュリティ仕様書.md): データ保護とプライバシーポリシー
 
 ---
 
 ## 📦 Installation
-1. リリースページから `AI-Secretary-Setup-0.6.3.exe` をダウンロードしてください。
+1. リリースページから `AI-Secretary-Setup-0.7.0.exe` をダウンロードしてください。
 2. インストーラーを実行すると、自動的にセットアップされます。
 3. 詳細は [インストールマニュアル](manual/installation_manual.md) を参照してください。
 
