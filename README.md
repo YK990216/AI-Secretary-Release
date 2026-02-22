@@ -5,19 +5,19 @@
 AI Secretary は、単なるチャットボットではありません。
 あなたのPC上の活動履歴（ログ）と、未来の予定（カレンダー）、そしてリアルタイムの集中状態（センサー）を統合し、「今、あなたが何をすべきか」を先回りしてサポートする Windows アプリケーションです。
 
-![Version](https://img.shields.io/badge/version-0.7.0-blue.svg)
+![Version](https://img.shields.io/badge/version-0.7.1-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-0078D6.svg)
 ![Stack](https://img.shields.io/badge/stack-Electron%20%7C%20React%20%7C%20Python%20%7C%20Firebase%20%7C%20Gemini-4285F4.svg)
 
 ---
 
-## 🚀 Key Features (v0.7.0)
+## 🚀 Key Features (v0.7.1)
 
 ### 1. 🧠 Deep Memory Briefing (文脈統合ブリーフィング)
 *   **Deep Memory**: 過去数日間の作業ログを記憶し、現在のコンテキストを理解。
 *   **Calendar Awareness**: Google/Outlookカレンダーから直近の予定を取得。
 *   **Impact**: これらを統合し、「A社との定例会議です。前回の議事録（ログ）によると、〇〇の件を確認する必要があります」といった高度なアドバイスを自動生成します。
-*   **Auto-Generation**: 毎晩22:00にその日の記憶を自動生成し、翌日のブリーフィングに備えます (v0.6.3+)。
+*   **Auto-Generation (Hybrid Deterministic)**: 毎晩2:00に「不活動時間」も含めた24時間1分の隙間もない記憶を自動生成。通信エラーや停止期間があっても、稼働再開時にポインタから遡って自動補完します (v0.7.1+)。
 
 ### 2. ⚡ Smart Tensai Sensing (集中センシング)
 *   **Multi-Modal Sensor**: キーボード入力密度(KPM)とマウス移動距離をリアルタイム監視（Python Sidecar）。
@@ -33,14 +33,14 @@ AI Secretary は、単なるチャットボットではありません。
 ## 📚 Documentation
 本リポジトリには、開発者向けの技術仕様が含まれています。
 
-*   **[リリースノート (v0.7.0)](release/RELEASE_NOTES_v0.7.0.md)**: 認証基盤刷新の詳細
-*   **[製品仕様書 (v0.7.0)](docs/01_製品仕様/AI秘書_製品仕様書_v0.7.0.md)**: ネイティブOAuth対応
+*   **[リリースノート (v0.7.1)](release/RELEASE_NOTES_v0.7.1.md)**: OS通知および記憶生成の堅牢化
+*   **[製品仕様書 (v0.7.1)](docs/01_製品仕様/AI秘書_製品仕様書_v0.7.1.md)**: ハイブリッド確定型ロジック
 *   [セキュリティ仕様書](AI秘書_セキュリティ仕様書.md): データ保護とプライバシーポリシー
 
 ---
 
 ## 📦 Installation
-1. リリースページから `AI-Secretary-Setup-0.7.0.exe` をダウンロードしてください。
+1. リリースページから `AI-Secretary-Setup-0.7.1.exe` をダウンロードしてください。
 2. インストーラーを実行すると、自動的にセットアップされます。
 3. 詳細は [インストールマニュアル](manual/installation_manual.md) を参照してください。
 
