@@ -1,9 +1,6 @@
 node_modules
 dist
-# release
-!release/RELEASE_NOTES_*.md
-!release/*.blockmap
-!release/*.exe
+release
 .env
 .DS_Store
 Thumbs.db
